@@ -1,1 +1,235 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import '~font-awesome/css/font-awesome.css';
+// $fa-font-path: "../node_modules/font-awesome/fonts";
+@import "../node_modules/font-awesome/scss/font-awesome.scss";
+.list-section {
+    background: #FAF9FF;
+    font-family: 'Lato', sans-serif;
+    height: 900px;
+    .menu {
+        display: flex;
+        padding: 1rem 2rem;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ECEEF5;
+        .hambrger {
+            box-sizing: border-box;
+            background: #FFFFFF;
+            border: 1px solid #ECEEF5;
+            border-radius: 10px;
+            padding: 7px 11.3px;
+            cursor: pointer;
+            .fa {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 18px;
+                text-align: center;
+                color: #8083A3;
+            }
+        }
+        .menu-div {
+            padding-left: 1rem;
+            .menu-text {
+                font-family: 'Lato', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 32px;
+                color: #1A1C1D;
+            }
+        }
+        .pagination {
+            .arrow-div {
+                background: #FFFFFF;
+                border: 1px solid #ECEEF5;
+                border-radius: 10px;
+                padding: 7px 16.2px;
+                .fa {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 18px;
+                    /* identical to box height */
+                    text-align: center;
+                    color: #8083A3;
+                }
+            }
+        }
+    }
+    .details-list {
+        padding: 2rem;
+        .vertical-line {
+            width: 1px;
+            height: 818px;
+            left: 563px;
+            top: 83px;
+            background: #FFFFFF;
+            border: 1px solid #ECEEF5;
+            position: absolute;
+            z-index: 0;
+            margin-top: -11px;
+        }
+        .search-text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #8083A3;
+            margin: auto;
+        }
+        .search-name {
+            .email-phone {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                color: #1A1C1D;
+                margin: auto;
+            }
+        }
+        .search-icon {
+            .fa {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 18px;
+                text-align: center;
+                color: #1D1D24;
+            }
+        }
+        .avtar {
+            .avtar-name {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 21px;
+                color: #1A1C1D;
+                margin: 0;
+                cursor: pointer;
+            }
+            .avtar-role {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                /* identical to box height, or 150% */
+                color: #8083A3;
+                margin: 0;
+            }
+        }
+        .comments {
+            .message {
+                background: #FFFFFF;
+                border: 1px solid #ECEEF5;
+                border-radius: 10px;
+                padding: 5px 9px;
+                z-index: 100; 
+            }
+            .message-2 {
+                background: linear-gradient(0deg, rgba(77, 76, 172, 0.1), rgba(77, 76, 172, 0.1)), #FFFFFF;
+                border: 1px solid #ECEEF5;
+                border-radius: 10px;
+                padding: 5px 9px; 
+                z-index: 100; 
+            }
+        }
+    }
+}
+.details-section {
+    font-family: 'Lato', sans-serif;
+    background: #FFFFFF;
+    .pd-23 {
+        padding: 2rem 6rem;
+    }
+    .avtar {
+        .avtar-name {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 32px;
+            color: #1A1C1D;
+            margin: 0;
+            cursor: pointer !important;
+        }
+        .avtar-role {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #8083A3;
+            margin: 0;
+        }
+        .btn-purple {
+            background: #6B59CC;
+            border-radius: 10px;
+            color: #FFFFFF;
+            padding: 0.5rem 1.227rem;
+        }
+        .comment-btn {
+            box-sizing: border-box;
+            background: #FFFFFF;
+            border: 1px solid #ECEEF5;
+            border-radius: 10px;
+            padding: 8px 12.5px;
+        }
+    }    
+    .pd-3 {
+        padding: 2rem 3rem 2rem 1rem;
+    }
+    .title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        /* identical to box height, or 150% */
+        text-align: right;
+        color: #8083A3;
+    }
+    .paragraph {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        /* identical to box height, or 150% */
+        text-align: left;
+        color: #1A1C1D;
+    }
+    .primary {
+        background: #F3F4F9;
+        border-radius: 8px;
+        padding: 5px 12px;
+        float: right;
+        .primary-text {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+            color: #8083A3;
+
+        }
+    }
+    
+    .comment-btn {
+        box-sizing: border-box;
+        background: #FFFFFF;
+        border: 1px solid #ECEEF5;
+        border-radius: 10px;
+        padding: 8px 12.5px;
+        cursor: pointer;
+        .fa {
+            color: #8083A3;
+        }
+    }
+}
+.ml-2 {
+    margin-left: 0.5rem !important;
+}
+.text-purple {
+    color: #6B59CC !important;
+}
+.mt-30 {
+    margin-top: 2rem;
+}

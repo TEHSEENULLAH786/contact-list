@@ -1,0 +1,64 @@
+[
+  { 
+    "id":"001",
+    "name":"Bradley Malone",
+    "designation":"Sales Manager",
+    "imageUrl":"assets/images/avtar.svg"
+  },
+  {
+    "id":"002",
+    "name":"Johanna Stevens",
+    "designation":"Project Manager",
+    "imageUrl":"assets/images/avtar-2.svg"
+
+  },
+  {      
+    "id":"003",
+    "name":"Marvin Lambert",
+    "designation":"Designerr",
+    "imageUrl":"assets/images/avtar-2.svg"
+
+  },
+  {
+    "id":"004",
+    "name":"Teresa Lloyd",
+    "designation":"PR agent",
+    "imageUrl":"assets/images/avtar-3.svg"
+
+  },
+  {
+    "id":"005",
+    "name":"Fred Haynes",
+    "designation":"Project Manager",
+    "imageUrl":"assets/images/avtar.svg"
+
+  },
+  {
+    "id":"006",
+    "name":"Marvin Lamber",
+    "designation":"Support Team",
+    "imageUrl":"assets/images/avtar.svg"
+
+  },
+  {
+    "id":"007",
+    "name":"Rose Peters",
+    "designation":"Designer",
+    "imageUrl":"assets/images/avtar-2.svg"
+
+  },
+  {
+    "id":"008",
+    "name":"Johanna Stevens",
+    "designation":"Project Manager",
+    "imageUrl":"assets/images/avtar-3.svg"
+
+  },
+  {
+    "id":"009",
+    "name":"Hettie Richardson",
+    "designation":"Sales Manager",
+    "imageUrl":"assets/images/avtar.svg"
+
+  }
+]

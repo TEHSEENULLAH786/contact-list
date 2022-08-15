@@ -1,0 +1,112 @@
+[
+    { 
+      "id":"001",
+      "name":"Bradley Malone",
+      "designation":"Sales Manager",
+      "imageUrl":"assets/images/avtar.svg",
+      "bio":"When I first got into the advertising, I was looking for the magical combination that would put website into the top search engine rankings",
+      "email":"johanna.stevens@gmail.com",
+      "dial":"j.stevens@ymsg.com",
+      "meeitng":"http://go.betacall.com/meet/j.stevens",
+      "phone":"439-582-1578"
+    },
+    
+    { 
+      "id":"002",
+      "name":"Johanna Stevens",
+      "designation":"Sales Manager",
+      "imageUrl":"assets/images/avtar-2.svg",
+      "bio":"When I first got into the advertising, I was looking for the magical combination that would put website into the top search engine rankings",
+      "email":"johanna.stevens@gmail.com",
+      "dial":"j.stevens@ymsg.com",
+      "meeitng":"http://go.betacall.com/meet/j.stevens",
+      "phone":"439-582-1578"
+    },
+    
+    { 
+      "id":"003",
+      "name":"Marvin Lambert",
+      "designation":"Sales Manager",
+      "imageUrl":"assets/images/avtar-2.svg",
+      "bio":"When I first got into the advertising, I was looking for the magical combination that would put website into the top search engine rankings",
+      "email":"johanna.stevens@gmail.com",
+      "dial":"j.stevens@ymsg.com",
+      "meeitng":"http://go.betacall.com/meet/j.stevens",
+      "phone":"439-582-1578"
+    },
+    
+    { 
+      "id":"004",
+      "name":"Teresa Lloyd",
+      "designation":"Sales Manager",
+      "imageUrl":"assets/images/avtar-3.svg",
+      "bio":"When I first got into the advertising, I was looking for the magical combination that would put website into the top search engine rankings",
+      "email":"johanna.stevens@gmail.com",
+      "dial":"j.stevens@ymsg.com",
+      "meeitng":"http://go.betacall.com/meet/j.stevens",
+      "phone":"439-582-1578"
+    },
+    
+    { 
+      "id":"005",
+      "name":"Fred Haynes",
+      "designation":"Sales Manager",
+      "imageUrl":"assets/images/avtar.svg",
+      "bio":"When I first got into the advertising, I was looking for the magical combination that would put website into the top search engine rankings",
+      "email":"johanna.stevens@gmail.com",
+      "dial":"j.stevens@ymsg.com",
+      "meeitng":"http://go.betacall.com/meet/j.stevens",
+      "phone":"439-582-1578"
+    },
+    
+    { 
+      "id":"006",
+      "name":"Marvin Lamber",
+      "designation":"Sales Manager",
+      "imageUrl":"assets/images/avtar.svg",
+      "bio":"When I first got into the advertising, I was looking for the magical combination that would put website into the top search engine rankings",
+      "email":"johanna.stevens@gmail.com",
+      "dial":"j.stevens@ymsg.com",
+      "meeitng":"http://go.betacall.com/meet/j.stevens",
+      "phone":"439-582-1578"
+    },
+    
+    { 
+      "id":"007",
+      "name":"Rose Peters",
+      "designation":"Sales Manager",
+      "imageUrl":"assets/images/avtar-2.svg",
+      "bio":"When I first got into the advertising, I was looking for the magical combination that would put website into the top search engine rankings",
+      "email":"johanna.stevens@gmail.com",
+      "dial":"j.stevens@ymsg.com",
+      "meeitng":"http://go.betacall.com/meet/j.stevens",
+      "phone":"439-582-1578"
+    },
+    
+    { 
+      "id":"008",
+      "name":"Johanna Steven",
+      "designation":"Sales Manager",
+      "imageUrl":"assets/images/avtar-3.svg",
+      "bio":"When I first got into the advertising, I was looking for the magical combination that would put website into the top search engine rankings",
+      "email":"johanna.stevens@gmail.com",
+      "dial":"j.stevens@ymsg.com",
+      "meeitng":"http://go.betacall.com/meet/j.stevens",
+      "phone":"439-582-1578"
+    },
+    
+    { 
+      "id":"009",
+      "name":"Hettie Richardson",
+      "designation":"Sales Manager",
+      "imageUrl":"assets/images/avtar.svg",
+      "bio":"When I first got into the advertising, I was looking for the magical combination that would put website into the top search engine rankings",
+      "email":"johanna.stevens@gmail.com",
+      "dial":"j.stevens@ymsg.com",
+      "meeitng":"http://go.betacall.com/meet/j.stevens",
+      "phone":"439-582-1578"
+    }
+
+   
+  ]
+  

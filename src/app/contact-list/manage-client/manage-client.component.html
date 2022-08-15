@@ -1,0 +1,154 @@
+<section>
+    <div class="angCard">
+
+        <!-- Header includes Title / (Search & Add client) button -->
+
+        <div *ngIf="hideElement" class="angCard-header">
+
+            <!-- Title  -->
+            <div class="angCard-title">
+                <span> {{verifyLabel('Manage Client')}} </span>
+            </div>
+
+            <!-- Search & Add Client Button -->
+            <div class="angCard-header-btns">
+                <button class="btnxs-transparent-icon" matTooltip="Search Project " (click)="openAddDataSearch('search')">
+                    <i class="search-icon"></i>
+                </button>
+                <button class="btnxs-transparent-icon" matTooltip="Add Project" (click)="openAddDataSearch()">
+                    <i class="add-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="angCard-content">
+
+            <!-- Add Client Component -->
+            <app-add-client *ngIf="!hideElement" [editData]="editClientData" (newItemEvent)="addItem($event)"
+                (newFormEvent)="formData($event)"></app-add-client>
+
+            <!-- Manage Client Table -->
+            <div *ngIf="hideElement" class="table-responsive">
+
+                <!-- Table For Client -->
+                <table mat-table [dataSource]="clientData" class="angTable" id="umsprojects-table">
+
+                    <!-- Image Column -->
+                    <ng-container matColumnDef="image">
+                        <th mat-header-cell *matHeaderCellDef class="text-center">
+                            <div class="blockheader-with-text">{{verifyLabel('Logo')}} </div>
+                        </th>
+                        <td mat-cell *matCellDef="let element" class="text-center">
+                            <div class="block-with-image">
+                                <img [src]="imageSrc(element)" class="tableimage">
+                            </div>
+                        </td>
+                    </ng-container>
+
+                    <!-- Title Column -->
+                    <ng-container matColumnDef="title">
+                        <th mat-header-cell *matHeaderCellDef>
+                            <div class="blockheader-with-text">{{verifyLabel('Title')}} </div>
+                        </th>
+                        <td mat-cell *matCellDef="let element">
+                            <div class="block-with-text"> {{element.title}} </div>
+                        </td>
+                    </ng-container>
+
+                    <!-- Description Column -->
+                    <ng-container matColumnDef="description">
+                        <th mat-header-cell *matHeaderCellDef>
+                            <div class="blockheader-with-text">{{verifyLabel('Description')}} </div>
+                        </th>
+                        <td mat-cell *matCellDef="let element">
+                            <div class="block-with-text">{{element.description}}
+                            </div>
+                        </td>
+                    </ng-container>
+
+                    <!-- Company Name Column -->
+                    <ng-container matColumnDef="companyName">
+                        <th mat-header-cell *matHeaderCellDef>
+                            <div class="blockheader-with-text">{{verifyLabel('Company Name')}} </div>
+                        </th>
+                        <td mat-cell *matCellDef="let element">
+                            <div class="block-with-text"> {{element.companyName}} </div>
+                        </td>
+                    </ng-container>
+
+                    <!-- Email Column -->
+                    <ng-container matColumnDef="email">
+                        <th mat-header-cell *matHeaderCellDef>
+                            <div class="blockheader-with-text">{{verifyLabel('Email')}} </div>
+                        </th>
+                        <td mat-cell *matCellDef="let element">
+                            <div class="block-with-text">
+                                {{element.email}} </div>
+                        </td>
+                    </ng-container>
+
+                    <!-- Phone Number Column -->
+                    <ng-container matColumnDef="phoneNumber">
+                        <th mat-header-cell *matHeaderCellDef>
+                            <div class="blockheader-with-text">{{verifyLabel('Contact')}} </div>
+                        </th>
+                        <td mat-cell *matCellDef="let element">
+                            <div class="block-with-text">
+                                {{element.phoneNumber}} </div>
+                        </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="city">
+                        <th mat-header-cell *matHeaderCellDef>
+                            <div class="blockheader-with-text">{{verifyLabel('City')}} </div>
+                        </th>
+                        <td mat-cell *matCellDef="let element">
+                            <div class="block-with-text">
+                                {{element.city}} </div>
+                        </td>
+                    </ng-container>
+
+                    <!-- Country Column -->
+                    <ng-container matColumnDef="country">
+                        <th mat-header-cell *matHeaderCellDef>
+                            <div class="blockheader-with-text">{{verifyLabel('Country')}} </div>
+                        </th>
+                        <td mat-cell *matCellDef="let element">
+                            <div class="block-with-text">
+                                {{element.country}} </div>
+                        </td>
+                    </ng-container>
+
+                    <!-- Action Column -->
+                    <ng-container matColumnDef="action">
+                        <th mat-header-cell *matHeaderCellDef class="text-center">
+                            <div class="blockheader-with-text">{{verifyLabel('Action')}} </div>
+                        </th>
+                        <td mat-cell *matCellDef="let element; let i = index" class="text-center">
+                            <button id="umsusers-editbtn4" class="btnxs-transparent-icon"
+                                (click)="editFormData(element)"><i class="mat-tooltip-trigger edit-icon"></i></button>
+                            <button class="btnxs-transparent-icondanger"
+                                (click)="openDeleteDialog('Client',element.clientId,i)"><i
+                                    class="mat-tooltip-trigger delete-icon"></i>
+                            </button>
+                        </td>
+                    </ng-container>
+
+                    <!-- In Case of No Client Found -->
+                    <tr class="mat-row" *matNoDataRow>
+                        <td class="mat-cell text-center no-data" [attr.colspan]="displayedColumns.length">
+                            {{verifyLabel( 'No data Available.')}}
+                        </td>
+                    </tr>
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                </table>
+
+                <!-- Pagination -->
+                <mat-paginator [length]="this.countData" #scopePagination [pageSize]="10"
+                    [pageSizeOptions]="[5,10, 20, 50, 100]" (page)="onPageChange($event)" [showFirstLastButtons]="true">
+                </mat-paginator>
+            </div>
+        </div>
+    </div>
+</section>
